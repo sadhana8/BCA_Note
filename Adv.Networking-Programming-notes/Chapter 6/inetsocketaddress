@@ -1,0 +1,8 @@
+using inetsocketaddress we can
+1) create client Address (connecting to the server)
+2)create server ADdree(Binding to the server)
+
+
+
+
+nslookup www.google.com  

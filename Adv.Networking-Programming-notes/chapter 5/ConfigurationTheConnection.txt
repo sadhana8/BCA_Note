@@ -1,0 +1,20 @@
+when the java program connects with the server(or any internal resource),it needs to configure the connection. 
+It means setting up rules like:
+
+1)Should the connection send data? (doOutput)
+2)should it read data? (doInput)
+3)should it use eached data or fetch fresh data? (useCaches)
+4)should it allow userInteraction(like a pop-up for authentication). (allowUserInteraction)
+5)should it check for the last modified data? (ifModifiedSince)
+       timestamp
+
+we have 7 methods that allows us configurating the connection.
+1) Protected URL url   store the url
+2) Protected Boolean connected. (true or false)
+3) Protected Boolean doInput.   (data should be readable or not) true by default
+4) Protected Boolean doOutput.   (data should be senable or not) false by default 
+5) Protected Boolean useCaches.  ()
+6) Protected Boolean allowUserInteraction.
+7) Protected Boolean ifModifiedSince.
+
+Boolean :- one of two values either 0 or 1 i.e. false and true respectively

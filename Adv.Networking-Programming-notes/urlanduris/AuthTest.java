@@ -1,0 +1,21 @@
+import java.net.*;
+
+public class AuthTest {
+    public static void main(String[] args){
+        try{
+            Authenticator.setDefault(new MyAuthenticator());
+
+            URI uri = new URI("https://httpbin.org/basic-auth/user/passwd");
+            URL url = uri.toURL();
+            HttpURLConnection connection=(HttpURLConnection) url.openConnection();
+        
+        //send request and get response
+           int responseCode =connection.getResponseCode();
+                  System.out.println("Response Code: " + responseCode);
+
+
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+}

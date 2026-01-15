@@ -1,0 +1,9 @@
+What is JSSE?Explain in context with secure communication
+write about the overloaded create socket methods to build a SSL Socket .
+write short notes on 
+a)event Handler
+b)client Mode
+
+4)what is session management? how can we get information about session in JSSe
+Mention the general steps for creating gsecureserver socket. also show with example
+what should be consider for configuring SSL server socket?explain
